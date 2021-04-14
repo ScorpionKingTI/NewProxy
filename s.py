@@ -27,39 +27,38 @@ print("       ⟡ ━━━━━━━━ ⟡ ━━━━━━━━ ⟡ ━�
 print('')
 time.sleep(5)
 def mn():
- print('''\033[34;1m
- _____________________________________________
- |   country (pais)   |   initials (sigla)   |
- +--------------------+----------------------|    
- |     AFEGANISTÃO    |          af          |
- |      ARGENTINA     |          ar          |
- |      AUSTRÁLIA     |          au          |
- |       BÉLGICA      |          be          |
- |       BOLIVIA      |          bo          |
- |       BRAZIL       |          br          |
- |       CANADA       |          ca          |
- |       SUIÇA        |          ch          |
- |       CHILE        |          cl          |                                
- |      COLÔMBIA      |          co          |
- |      ALEMANHA      |          de          |
- |     DINA MARCA     |          dk          |
- |       EGITO        |          eg          |
- |      ESPANHA       |          es          |
- |      FRANÇA        |          fr          |
- |    REINO UNIDO     |          gb          |
- |     HONG-KONG      |          hk          |
- |     INDONÉSIA      |          id          |
- |       INDIA        |          in          |
- |      ITALIA        |          it          |
- |      JAMAICA       |          jm          |
- |       JAPÃO        |          jp          |
- |      PORTUGAL      |          pt          |
- |      TURQUIA       |          tr          |
- |   ESTADOS UNIDOS   |          us          |
- |      RUSSIA        |          rus         |
- |      randon        |          all         |
- +--------------------+----------------------+
- Esta tabela mostra paises mas comuns mas junto a esta ferramenta esta um arquivo pdf com todos os paises e siglas
+ print('''\033[34;1m_____________________________________________
+|   country (pais)   |   initials (sigla)   |
++--------------------+----------------------|
+|     AFEGANISTÃO    |          af          |
+|      ARGENTINA     |          ar          |
+|      AUSTRÁLIA     |          au          |
+|       BÉLGICA      |          be          |
+|       BOLIVIA      |          bo          |
+|       BRAZIL       |          br          |
+|       CANADA       |          ca          |
+|       SUIÇA        |          ch          |
+|       CHILE        |          cl          |
+|      COLÔMBIA      |          co          |
+|      ALEMANHA      |          de          |
+|     DINA MARCA     |          dk          |
+|       EGITO        |          eg          |
+|      ESPANHA       |          es          |
+|      FRANÇA        |          fr          |
+|    REINO UNIDO     |          gb          |
+|     HONG-KONG      |          hk          |
+|     INDONÉSIA      |          id          |
+|       INDIA        |          in          |
+|      ITALIA        |          it          |
+|      JAMAICA       |          jm          |
+|       JAPÃO        |          jp          |
+|      PORTUGAL      |          pt          |
+|      TURQUIA       |          tr          |
+|   ESTADOS UNIDOS   |          us          |
+|      RUSSIA        |          rus         |
+|      randon        |          all         |
++--------------------+----------------------+
+Esta tabela mostra paises mas comuns mas junto a esta ferramenta esta um arquivo pdf com todos os paises e siglas
  ''')
  t=input('\nDigite a sigla do pais que deseja obter proxys\n> ')
  s=requests.get('https://api.proxyscrape.com?request=displayproxies&proxytype=https&timeout=7000&country={}&anonymity=elite&ssl=no&limit=50&formato=json'.format(t)).text
