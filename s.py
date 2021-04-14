@@ -11,7 +11,7 @@ def gt():
     print('\n\033[33;1mseleção invalida digite 1 ou 2\n')
     gt()
 os.system('clear')
-print("                    coded by:")
+print("\033[32;1m                    coded by:")
 time.sleep(0.1)      
 print("")
 time.sleep(0.1)      
