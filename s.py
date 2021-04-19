@@ -61,7 +61,7 @@ def mn():
 Esta tabela mostra paises mas comuns mas junto a esta ferramenta esta um arquivo pdf com todos os paises e siglas
  ''')
  t=input('\nDigite a sigla do pais que deseja obter proxys\n> ')
- s=requests.get('https://api.proxyscrape.com?request=displayproxies&proxytype=https&timeout=7000&country={}&anonymity=elite&ssl=no&limit=50&formato=json'.format(t)).text
+ s=requests.get('https://api.proxyscrape.com?request=displayproxies&proxytype=https&timeout=7000&country={}&anonymity=elite&ssl=no&limit=0&formato=json'.format(t)).text
  print('\033[34;1m\n◆-▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱-◆\n◆-\n\n',s,'\n◆-\n◆-▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱-◆\n')
  gt()
 mn()
